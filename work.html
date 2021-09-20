@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio | Ashwini Biradar</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="toggle" onclick="toggleMenu();"></div>
+
+<section class="work" id="work">
+		<div class="title">
+			<h2>Recent Work</h2>
+			<p>I have completed my SSC from Bhairavnath High School, pune 
+				and HSC from same Jr. College.<br>
+				I have completed My Bachelor's from MIT ACSC Alandi(D) Pune.<br> 
+				Currently persuing MCA degree from Pimpri Chinchwad college 
+				of Engineering, Pune, India.</p>
+		</div>
+		<div class="content">
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="img1.jpg">
+				</div>
+				<div class="textBx">
+					<h3>Project 01</h3>
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="img2.jpg">
+				</div>
+				<div class="textBx">
+					<h3>Project 02</h3>
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="img3.jpg">
+				</div>
+				<div class="textBx">
+					<h3>Project 03</h3>
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="img4.jpg">
+				</div>
+				<div class="textBx">
+					<h3>Project 04</h3>
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="img5.jpg">
+				</div>
+				<div class="textBx">
+					<h3>Project 05</h3>
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="img6.jpg">
+				</div>
+				<div class="textBx">
+					<h3>Project 06</h3>
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="img7.jpg">
+				</div>
+				<div class="textBx">
+					<h3>Project 07</h3>
+				</div>
+			</div>
+			<div class="workBx">
+				<div class="imgBx">
+					<img src="img8.jpg">
+				</div>
+				<div class="textBx">
+					<h3>Project 08</h3>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<div class="copyright">
+		<p>© 2021 Ashwini. All Rights Reserved | Design by Ashu</p>
+		
+	</div>
+	<div class="sidebar">
+		<ul class="menu">
+			<li><a href="AshuWeb.html" onclick="toggleMenu();">Home</a></li>
+			<li><a href="about.html" onclick="toggleMenu();">About</a></li>
+			<li><a href="service.html" onclick="toggleMenu();">Services</a></li>
+			<li><a href="work.html" onclick="toggleMenu();">Work</a></li>
+			<li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+		</ul>
+	</div>
+	<script>
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.toggle');
+			const sidebar = document.querySelector('.sidebar');
+			menuToggle.classList.toggle('active')
+			sidebar.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>

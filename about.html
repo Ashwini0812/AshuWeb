@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio | Ashwini Biradar</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="toggle" onclick="toggleMenu();"></div>
+		
+	<section class="about" id="about">
+		<div class="title white">
+			<h2>About Me</h2>
+			<p>ah cuairhbuqn  fihwfajadfk jerwhfsjdbva.</p>
+		</div>
+		<div class="content">
+			<div class="textBx">
+				<p>I'm a Front End Web Developer.
+				Hi,Welcome to my WebPage!
+				I am Ashwini Biradar student at Pimpri Chinchwad college 
+				of Engineering, Pune, India.<br>
+				I have completed my SSC from Bhairavnath High School, pune 
+				and HSC from same Jr. College.<br>
+				I have completed My Bachelor's from MIT ACSC Alandi(D) Pune.<br> 
+				Currently persuing MCA degree from Pimpri Chinchwad college 
+				of Engineering, Pune, India.
+				</p>
+			</div>
+			<div class="imgBx">
+				<img src="bg1.jpg">
+			</div>
+		</div>
+	</section>
+	<div class="copyright">
+		<p>© 2021 Ashwini. All Rights Reserved | Design by Ashu</p>
+		
+	</div>
+	<div class="sidebar">
+		<ul class="menu">
+			<li><a href="AshuWeb.html" onclick="toggleMenu();">Home</a></li>
+			<li><a href="about.html" onclick="toggleMenu();">About</a></li>
+			<li><a href="service.html" onclick="toggleMenu();">Services</a></li>
+			<li><a href="work.html" onclick="toggleMenu();">Work</a></li>
+			<li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+		</ul>
+	</div>
+	<script>
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.toggle');
+			const sidebar = document.querySelector('.sidebar');
+			menuToggle.classList.toggle('active')
+			sidebar.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
